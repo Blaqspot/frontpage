@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frontpage</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function show_dropDownMenu(){
+            document.getElementById("dropdowncat").style.display="block";
+        }
+
+        function hide_dropDownMenu(){
+            document.getElementById("dropdowncat").style.display="none"
+        }
+    </script>
+
+</head>
+<body>
+
+    <div class="banner">
+       <nav>
+            <div class="logo">
+            <img width="100%" height="100%" src="images/logo.jpeg" alt="">
+            </div>
+                <ul>
+                    <li onmouseover="show_dropDownMenu()" onmouseleave="hide_dropDownMenu()" class="dropdown"><a href="">dropdown</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Gallery</a></li>
+                </ul>
+       </nav>
+       <br>
+       <section id="dropdowncat" class="dropDownMenu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+       </section>
+
+       <br>
+
+       <div class="content">
+            <h2>Welcome To My Page</h2>
+
+            <p>You will experience the best in technology as you surf through the website. You will notice a <br> whole lot of things that will help you in your carreer as a tech agent.</p>
+        <div>
+            <button type="button"><span></span> Explore</button>
+            <button type="button"><span></span> Sign Up</button> 
+        </div>
+       </div>
+    
+
+    </div>
+    
+</body>
+</html>
